@@ -16,14 +16,14 @@
            largest 2
            num n]
       (if (< i limit)
-       (let [divisible (zero? (mod num i))]
-        (recur
-         (+ i 2)
-         (if divisible i largest)
-         (if divisible (divide-by num i) num)))
+        (let [divisible (zero? (mod num i))]
+          (recur
+           (+ i 2)
+           (if divisible i largest)
+           (if divisible (divide-by num i) num)))
         largest))))
 
 ; largest prime factor
 (defn euler-3 [n]
   (let [n' (divide-by n 2)]
-      (get-largest n')))
+    (get-largest n')))

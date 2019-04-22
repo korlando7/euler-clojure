@@ -1,5 +1,5 @@
 (ns euler-clojure.core
-  (:require [euler-clojure.problem003 :refer [euler-3]]))
+  (:require [euler-clojure.problem005 :refer [euler-5]]))
 
 (defn -main []
-    (prn (euler-3 600851475143)))
+  (prn (euler-5)))
